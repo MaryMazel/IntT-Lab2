@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LB2</title>
+</head>
+
+<!-- Использование стилей через тег style -->
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+</style>
+<!-- ------------------------------------ -->
+
+
+<!-- Подключение файла стилей -->
+<link rel="stylesheet" href="css/main.css">
+<!-- ------------------------ -->
+
+<body>
+    
+    <!-- Использование inline-стилей -->
+    <header style="width: 100%; height: 70px; display: flex; align-items: center; justify-content: center; background-color: rgb(55, 182, 255);">
+        <h2 style="color: white; text-transform: uppercase; font-family: 'ArtegraSans-ExtraLight'; line-height: 1;">Мария Мазел ЛБ2</h2>
+    </header>
+    <!-- --------------------------- -->
+
+
+    <!-- Демонстрация float -->
+    <section style="height: 100px;">
+        <p style="float: left; width: auto;">Демонстрация Float 1</p>
+        <div style="float: left; height: 55px; width: 55px; background-color: rgb(0, 107, 168); margin-right: 20px; margin-left: 20px;"></div>
+        <p style="float: left; width: 500px;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur atque nihil praesentium! Nostrum dolorum magnam rem dolorem quo impedit nobis, distinctio similique delectus tempora accusantium, sunt explicabo quae .</p>
+        <div style="float: left; height: 55px; width: 55px; background-color: rgb(0, 107, 168); margin-left: 20px; margin-right: 20px;"></div>
+        <p style="float: left; width: auto;">Демонстрация Float</p>
+    </section>
+    <!-- ------------------ -->
+
+
+
+    <!-- Checkbox -->
+    <section>
+        <form class="checkbox-form" method="POST" action="">
+            <div class="checkbox-wrapper">
+                <input id="checkbox1" class="checkbox" type="checkbox" name="checkbox1">
+                <label for="checkbox1">Первый checkbox</label>
+            </div>
+            <div class="checkbox-wrapper">
+                <input id="checkbox2" class="checkbox" type="checkbox" name="checkbox2">
+                <label for="checkbox1">Второй checkbox</label>
+            </div>
+            <div class="checkbox-wrapper">
+                <input id="checkbox3" class="checkbox" type="checkbox" name="checkbox3">
+                <label for="checkbox1">Третий checkbox</label>
+            </div>
+            <div class="checkbox-wrapper">
+                <input id="checkbox4" class="checkbox" type="checkbox" name="checkbox4">
+                <label for="checkbox1">Четвёртый checkbox</label>
+            </div>
+            <div class="checkbox-wrapper">
+                <input id="checkbox5" class="checkbox" type="checkbox" name="checkbox5">
+                <label for="checkbox1">Пятый checkbox</label>
+            </div>
+        </form>
+    </section>
+    <!-- --------- -->
+
+
+    <!-- Flex -->
+    <section>
+        <div class="flex-wrapper">
+            <div class="flex-item">
+                1
+            </div>
+            <div class="flex-item">
+                2
+            </div>
+            <div class="flex-item">
+                3
+            </div>
+            <div class="flex-item">
+                4
+            </div>
+            <div class="flex-item">
+                5
+            </div>
+            <div class="flex-item">
+                6
+            </div>
+            <div class="flex-item">
+                7
+            </div>
+            <div class="flex-item" id="flex-item8"> 
+                8
+            </div>
+
+            <div class="flex-item">
+                9
+            </div> 
+        </div>
+    </section>
+    <!-- ---- -->
+
+
+</body>
+</html>

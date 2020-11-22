@@ -1,0 +1,123 @@
+/*--------------------------FONTS--------------------------*/
+  @font-face {
+    font-family: 'ArtegraSans-ExtraLight';
+    src: url('fonts/ArtegraSans-ExtraLight.ttf') format('truetype');
+  }
+  @font-face {
+    font-family: 'ArtegraSans-Medium';
+    src: url('fonts/ArtegraSans-Medium.ttf');
+  }
+  @font-face {
+    font-family: 'ArtegraSans-Regular.ttf';
+    src: url('fonts/ArtegraSans-Regular.ttf');
+  }
+  @font-face {
+    font-family: 'ArtegraSans-SemiBold';
+    src: url('fonts/ArtegraSans-SemiBold.ttf');
+  }
+  @font-face {
+    font-family: 'Bebas';
+    src: url('fonts/Bebas.ttf');
+  }
+
+  .checkbox-form{
+    display: flex;
+    flex-direction: column;
+  }
+  body{
+      background-color: rgb(151, 217, 255);
+  }
+  section{
+      max-width: 1140px;
+      box-sizing: border-box;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 40px;
+  }
+
+  /* У чекбокса относительное(relative) позиционирование, а у after абсолютное */
+  .checkbox{
+      height: 36px;
+      width: 36px;
+      margin: 5px;
+      position: relative;
+  }
+  .checkbox::after{
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 30px;
+      width: 30px;
+      background-color: rgb(151, 217, 255);
+      color: transparent;
+      border: 3px solid rgb(46, 176, 252);
+      transition: 200ms ease-in;
+  }
+  .checkbox:checked::after{
+      background-color: rgb(0, 104, 165);
+      border-color: transparent;
+      color: white;
+  }
+
+/* Использование ID */
+
+#checkbox1::after{
+    content: '1';
+}
+#checkbox2::after{
+    content: '2';
+}
+#checkbox3::after{
+    content: '3';
+}
+#checkbox4::after{
+    content: '4';
+}
+#checkbox5::after{
+    content: '5';
+}
+
+.checkbox-wrapper{
+    display: flex;
+    align-items: center;
+    font-family: 'Bebas';
+    font-size: 18px;
+    line-height: 1;
+}
+
+.checkbox-wrapper label{
+    margin-left: 10px;
+}
+
+.flex-wrapper{
+    width: 100%;
+    background-color: rgb(255, 143, 123);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.flex-item{
+    height: 140px;
+    width: 11%;
+    background-color: yellow;
+    margin: 10px 0px;
+}
+#flex-item8{
+    width: 13%;
+}
+.flex-item:last-child{
+    width: 100%;
+    background-color: green;
+}
+.flex-item:first-child{
+    background-color: green;
+}
+
